@@ -4,7 +4,7 @@ class Program
 {
     static void Main()
     {
-        #alper ayraaannnnn
+        //alper ayraaannnnn
         Console.Write("Birinci sayıyı girin: ");
         double s1 = Convert.ToDouble(Console.ReadLine());
 
