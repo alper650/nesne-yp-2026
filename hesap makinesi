@@ -4,19 +4,19 @@ class Program
 {
     static void Main()
     {
-        Console.Write("Birinci sayıyı girin: ");
+        Console.Write("Birinci sayıyı gir: ");
         double sayi1 = Convert.ToDouble(Console.ReadLine());
 
         Console.Write("İkinci sayıyı girin: ");
         double sayi2 = Convert.ToDouble(Console.ReadLine());
 
-        Console.WriteLine("Yapmak istediğiniz işlemi seçin: ");
+        Console.WriteLine("Yapmak istediğin işlemi seç: ");
         Console.WriteLine("1 - Toplama");
         Console.WriteLine("2 - Çıkarma");
         Console.WriteLine("3 - Çarpma");
         Console.WriteLine("4 - Bölme");
 
-        Console.Write("Seçiminizi yapın (1/2/3/4): ");
+        Console.Write("Seçimini yap (1/2/3/4): ");
         int islem = Convert.ToInt32(Console.ReadLine());
 
         double sonuc = 0;
@@ -38,15 +38,10 @@ class Program
             case 4:
                 if (sayi2 != 0)
                     sonuc = sayi1 / sayi2;
-                else
-                    Console.WriteLine("Bir sayıyı sıfıra bölemezsiniz!");
+
                 break;
 
-            default:
-                Console.WriteLine("Geçersiz işlem seçimi!");
-                break;
         }
-
        
         if (islem >= 1 && islem <= 4 && !(islem == 4 && sayi2 == 0))
             Console.WriteLine("Sonuç: " + sonuc);
